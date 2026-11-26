@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.appraisily/mcp",
+  "title": "Appraisily",
+  "description": "Check past auction prices and silver hallmarks in AI chats, plus appraisal prep and sample reports.",
+  "version": "1.0.2",
+  "websiteUrl": "https://appraisily.com/mcp",
+  "repository": {
+    "url": "https://github.com/Appraisily/appraisily-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://assets.appraisily.com/openai-mcp/appraisily-chatgpt-icon-125x128.png",
+      "mimeType": "image/png",
+      "sizes": ["125x128"]
+    }
+  ],
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.appraisily.com/mcp"
+    },
+    {
+      "type": "sse",
+      "url": "https://mcp.appraisily.com/sse"
+    }
+  ]
+}
